@@ -1,0 +1,278 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #F9FAFB;  /* Soft White Background */
+    color: #1F2937; /* Dark Gray Text */
+}
+
+/* Main Container */
+#main {
+    width: 100%;
+}
+
+/* Home Section */
+#home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Design */
+.design {
+    position: absolute;
+    top: -200px;
+    left: 800px;
+    width: 1000px;
+    height: 780px;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #1E3A8A; /* Deep Blue */
+}
+
+/* Navbar */
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    padding: 5px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 10px;
+}
+.logo h1{
+    font-size: 1.5rem;
+    color: #010e34d8; /* Deep Blue */
+
+}
+
+/* Navigation Links */
+.links {
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 2px 20px;
+    justify-content: center;
+}
+
+.links a {
+    color: #1F2937;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-weight: 600;
+
+
+}
+
+.links a:hover {
+    color: white;
+    background-color: #1E3A8A;
+    border-radius: 50px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+/* Authentication Buttons */
+.register {
+    display: flex;
+    gap: 15px;
+}
+
+.log-in, .log-out {
+    width: 90px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.log-in {
+    background-color: white;
+    border: 2px solid #1E3A8A;
+    color: #1E3A8A;
+}
+
+.log-in:hover {
+    background-color: #D4A373;
+    color: white;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.log-out {
+    background-color: #1E3A8A;
+    color: white;
+}
+
+.log-out:hover {
+    background-color: #14274E;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+#pageOne {
+    width: 100%;
+    height: 90%;
+}
+
+.home-content {
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    justify-content: space-between;
+}
+
+/* Hero Text */
+.function {
+    width: 500px;
+    height: 400px;
+    padding: 120px 0 5px;
+}
+
+.function h1 {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #1E3A8A;
+}
+
+/* Hero Image */
+.homeImage img {
+    position: absolute;
+    top: 185px;
+    left: 720px;
+    width: 600px;
+    z-index: 10;
+    object-fit: cover;
+}
+
+/* Search Options */
+.options {
+    margin-top: 25px;
+    position: relative;
+    border-radius: 29px;
+    width: 500px;
+    height: 110px;
+    background-color: #1E3A8A;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: absolute;
+    top: 59px;
+    width: 500px;
+    height: 52px;
+    background-color: #D4A373;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Search Inputs */
+.city {
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #1F2937;
+    outline: none;
+    font-size: 16px;
+}
+
+.locat {
+    width: 270px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #1F2937;
+    outline: none;
+    font-size: 16px;
+}
+
+.city::placeholder, .locat::placeholder {
+    color: #374151;
+}
+
+/* Separator */
+.separator {
+    border: 0.5px solid rgba(83, 78, 78, 0.5);
+    height: 32px;
+    margin: 16px 0;
+}
+
+/* CTA Buttons */
+#full-home, #co-live {
+    /* margin-top: 15px; */
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#full-home:hover, #co-live:hover {
+    background-color: #B6825D;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .home-content {
+        flex-direction: column;
+        padding: 50px 100px;
+        text-align: center;
+    }
+
+    .homeImage img {
+        position: static;
+        width: 80%;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .city, .locat {
+        width: 100%;
+    }
+}
